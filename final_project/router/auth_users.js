@@ -3,12 +3,7 @@ const jwt = require('jsonwebtoken');
 let books = require("./booksdb.js");
 const regd_users = express.Router();
 
-let users = [
-    {
-        "username": "user1",
-        "password": "pwd1"
-    },
-];
+let users = [];
 
 const isValid = (username)=>{ //returns boolean
 const usernameValid = users.filter((user) => user.username === username);
